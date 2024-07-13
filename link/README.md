@@ -10,4 +10,12 @@ https://youtube.com/live/2DqTAFsusFs
 
 https://youtube.com/live/3xq5BweK10k
 
+[2024_07_13_早上]
+
+https://youtube.com/live/Dbnt9OBeVFI
+
+[2024_07_13_下午]
+
+https://youtube.com/live/CFh2NUwejO0
+
 
