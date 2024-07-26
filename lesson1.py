@@ -1,1 +1,1 @@
-print("Hello! python virtual enviroment")
+print("Hello! python virtural enviroment")
