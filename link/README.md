@@ -35,4 +35,13 @@ https://youtube.com/live/__NM72rSxso
 
 https://youtube.com/live/IndC1ckmSl0
 
+[2024_08_03_上午]
+
+https://youtube.com/live/mZ_CnC6-z9Y
+
+[2024_08_03_下午]
+
+https://youtube.com/live/Fl8aG40eb5Q
+
+
 
