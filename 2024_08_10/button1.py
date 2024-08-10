@@ -1,11 +1,15 @@
 import signal
 from gpiozero import Button,LED
+from datetime import datetime
 
 def user_release():
     print("使用者按下放開")
     led.toggle()
+    now = datetime.now()
+    now_str = now.strftime('%Y-%m-%d %H:%M:%S')
+    print(now_str)
     if led.is_lit:
-        print("燈是開的")
+        print("燈是開的")        
     else:
         print("燈是關的")
 
