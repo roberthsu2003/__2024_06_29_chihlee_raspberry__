@@ -1,1 +1,4 @@
 redis
+RPi.GPIO
+lgpio
+gpiozero
