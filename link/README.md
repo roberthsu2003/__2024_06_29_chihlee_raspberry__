@@ -43,5 +43,13 @@ https://youtube.com/live/mZ_CnC6-z9Y
 
 https://youtube.com/live/Fl8aG40eb5Q
 
+[2024_08_10_早上]
+
+https://youtube.com/live/Hm0gOGnRl9A
+
+[2024_08_10_下午]
+
+https://youtube.com/live/XTQyJZZJv-8
+
 
 
