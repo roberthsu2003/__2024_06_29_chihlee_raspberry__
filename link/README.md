@@ -52,4 +52,11 @@ https://youtube.com/live/Hm0gOGnRl9A
 https://youtube.com/live/XTQyJZZJv-8
 
 
+[2024_08_17_早上]
+
+https://youtube.com/live/I--LO3Pp2NI
+
+[2024_08_17_下午]
+
+https://youtube.com/live/Z_NpkLLv1A8
 
