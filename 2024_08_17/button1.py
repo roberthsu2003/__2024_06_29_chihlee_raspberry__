@@ -12,11 +12,11 @@ def user_release():
     if led.is_lit:
         message = "燈是開的"
         print(message)
-        publish(topic='501教室/老師桌燈',payload=message,hostname='127.0.0.1',qos=2)
+        publish.single(topic='501教室/老師桌燈',payload=message,hostname='127.0.0.1',qos=2)
     else:
         message = "燈是關的"
         print(message)
-        publish(topic='501教室/老師桌燈',payload=message,hostname='127.0.0.1',qos=2)
+        publish.single(topic='501教室/老師桌燈',payload=message,hostname='127.0.0.1',qos=2)
 
 if __name__ == '__main__':
     button = Button(pin=18)
