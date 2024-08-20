@@ -9,10 +9,10 @@ from streamlit_autorefresh import st_autorefresh
 load_dotenv()
 st_autorefresh()
 conn = redis.Redis(host=os.environ['REDIS_HOST'],port=6379,password=os.environ['REDIS_PASSWORD'])
-bytes_list = conn.lrange('501教室/老師桌燈',-5,-1)
-str_list = [bytes_str.decode('utf-8') for bytes_str in reversed(bytes_list)]
-dict_list = [json.loads(string) for string in str_list]
-df1 = pd.DataFrame(dict_list)
+bytes_list = conn.lrange('501教室/老師桌燈',-5,-1) #取得的資料為list內有bytes string
+str_list = [bytes_str.decode('utf-8') for bytes_str in reversed(bytes_list)] #將bytes string轉換為str
+dict_list = [json.loads(string) for string in str_list] #將字串轉為python的資料結構
+df1 = pd.DataFrame(dict_list) #建立DataFrame
 st.title("訓練通教室")
 st.header("感測器:blue[cool] :sunglasses:")
 st.dataframe(df1,
