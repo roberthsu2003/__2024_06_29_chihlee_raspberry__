@@ -1,0 +1,6 @@
+redis
+paho-mqtt
+python-dotenv
+streamlit
+pandas
+streamlit-autorefresh
