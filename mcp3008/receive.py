@@ -10,8 +10,13 @@ import threading
 
 #MQTT接收訊息的callback
 def on_message(mosq, obj, msg):
-    topic = msg.topico
-    print(topic)
+    topic = msg.topic
+    if topic == '501教室/光敏電阻':
+        pass 
+    elif topic == '501教室/可變電阻':
+        pass
+    else:
+        print("不明topic") 
     '''
     message = msg.payload.decode('utf-8')#預設是binary str,轉換為str
     redis_conn.rpush(topic,message) #儲存在本機端redis
