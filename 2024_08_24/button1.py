@@ -3,6 +3,8 @@ from gpiozero import Button,LED
 from datetime import datetime
 import paho.mqtt.publish as publish
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 def user_release():
     print("使用者按下放開")
