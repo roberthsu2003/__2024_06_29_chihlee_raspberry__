@@ -1,0 +1,5 @@
+redis
+python-dotenv
+streamlit
+pandas
+streamlit-autorefresh
