@@ -17,6 +17,7 @@ def on_message(mosq, obj, msg):
 
 if __name__ == '__main__':
     client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
+    client.username_pw_set(username=os.environ['MQTT_USERNAME'],password=os.environ['MQTT_PASSWORD'])
     client.on_message = on_message
     client.connect(os.environ['MQTT_SERVER'])
     client.subscribe('501教室/老師桌燈',qos=2)

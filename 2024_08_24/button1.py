@@ -25,7 +25,7 @@ def user_release():
             "topic":"501教室/老師桌燈"
         }}''' 
         print(message)
-        publish.single(topic='501教室/老師桌燈',payload=message,hostname='127.0.0.1',qos=2,auth={'username':os.environ['MQTT_USERNAME'],'passowrd':os.environ['MQTT_PASSWORD']})
+        publish.single(topic='501教室/老師桌燈',payload=message,hostname='127.0.0.1',qos=2,auth={'username':os.environ['MQTT_USERNAME'],'password':os.environ['MQTT_PASSWORD']})
 
 if __name__ == '__main__':
     button = Button(pin=18)
