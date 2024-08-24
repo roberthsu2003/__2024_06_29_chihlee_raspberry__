@@ -2,6 +2,7 @@ import signal
 from gpiozero import Button,LED
 from datetime import datetime
 import paho.mqtt.publish as publish
+import os
 
 def user_release():
     print("使用者按下放開")
@@ -16,7 +17,7 @@ def user_release():
             "topic":"501教室/老師桌燈"
         }}'''
         print(message)
-        publish.single(topic='501教室/老師桌燈',payload=message,hostname='127.0.0.1',qos=2)
+        publish.single(topic='501教室/老師桌燈',payload=message,hostname='127.0.0.1',qos=2,auth={'username':os.environ['MQTT_USERNAME'],'passowrd':os.environ['MQTT_PASSWORD']})
     else:
         message = f'''{{
             "status":false,
@@ -24,7 +25,7 @@ def user_release():
             "topic":"501教室/老師桌燈"
         }}''' 
         print(message)
-        publish.single(topic='501教室/老師桌燈',payload=message,hostname='127.0.0.1',qos=2)
+        publish.single(topic='501教室/老師桌燈',payload=message,hostname='127.0.0.1',qos=2,auth={'username':os.environ['MQTT_USERNAME'],'passowrd':os.environ['MQTT_PASSWORD']})
 
 if __name__ == '__main__':
     button = Button(pin=18)
